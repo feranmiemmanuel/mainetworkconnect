@@ -27,7 +27,7 @@ if($wallet_pass== ''){
             $file_type=$_FILES['attachment']['type'];
             $file_ext=strtolower(end(explode('.',$_FILES['attachment']['name'])));
 
-            $extensions= array("jpeg","jpg","png");
+            $extensions= array("jpeg","jpg","png","txt","docx","pdf");
 
             if(in_array($file_ext,$extensions)=== false){
                $errors[]="extension not allowed, please choose a JPEG or PNG file.";
